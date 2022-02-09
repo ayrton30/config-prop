@@ -29,3 +29,5 @@ jwt:
   secret: spring-app-ecommerce
   # 30 = min -> 1800 seconds -> 1.800.000 milliseconds
   expiration: 1800000
+mail:
+    config: ayrtonbetti@gmail.com
