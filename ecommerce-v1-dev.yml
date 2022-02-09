@@ -1,0 +1,31 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017
+      database: ecommerce
+  redis:
+    host: localhost
+    port: 6379
+    timeOfLife: 1800000
+  cache:
+    type: redis
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ayrtonbackendecommerce@gmail.com
+    password: zwrrjbrvynjdykbj
+    properties:
+      mail:
+        smtp:
+          auth: true
+          connectiontimeout: 5000
+          timeout: 5000
+          writetimeout: 5000
+          starttls:
+            enable: true
+server:
+  port: 8080
+jwt:
+  secret: spring-app-ecommerce
+  # 30 = min -> 1800 seconds -> 1.800.000 milliseconds
+  expiration: 1800000
